@@ -421,3 +421,273 @@
 2025-04-16 15:30:21,851 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
 2025-04-16 15:30:49,519 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
 2025-04-16 15:31:05,766 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 15:32:26,307 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-16 15:32:32,194 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Отримано новий запит чату
+2025-04-16 15:32:32,201 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Повідомлення користувача: привіт...
+2025-04-16 15:32:33,437 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-16 15:32:33,940 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_k1gsN0SivwwsjK4UPtMV6KFn/messages "HTTP/1.1 200 OK"
+2025-04-16 15:32:35,100 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_k1gsN0SivwwsjK4UPtMV6KFn/runs "HTTP/1.1 200 OK"
+2025-04-16 15:32:35,718 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_k1gsN0SivwwsjK4UPtMV6KFn/runs/run_cJYx2Z8R37C8Wp3aN4aRZi8b "HTTP/1.1 200 OK"
+2025-04-16 15:32:37,154 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_k1gsN0SivwwsjK4UPtMV6KFn/runs/run_cJYx2Z8R37C8Wp3aN4aRZi8b "HTTP/1.1 200 OK"
+2025-04-16 15:32:37,677 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_k1gsN0SivwwsjK4UPtMV6KFn/messages "HTTP/1.1 200 OK"
+2025-04-16 15:32:37,690 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Відповідь OpenAI: Вітаю! Як можу допомогти вам з вибором сонячних па...
+2025-04-16 15:32:37,692 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Запит до D-ID API для створення відео
+2025-04-16 15:32:43,808 [WARNING] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Невідомий статус відео: started
+2025-04-16 15:32:43,810 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Використовуємо статичне зображення замість відео
+2025-04-16 15:32:43,815 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Отримано URL відео від D-ID за 6.12 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-16 15:32:43,818 [INFO] [8f30f883-149c-4a6c-91b5-893b201ca3e1] Запит оброблено успішно за 11.62 сек
+2025-04-16 15:55:02,422 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-16 16:09:30,732 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:09:57,391 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:13:18,587 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-16 16:13:33,100 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-16 16:16:09,611 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:19:49,637 [INFO] [87943694-bb2c-4e9d-92f4-96b0b524ec58] Ініціалізація аватара HeyGen
+2025-04-16 16:19:50,167 [ERROR] [87943694-bb2c-4e9d-92f4-96b0b524ec58] Помилка HeyGen API: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:21:05,370 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:21:54,303 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:22:52,403 [INFO] [e1c410f6-819f-43b7-aa94-45a38020b4ea] Ініціалізація аватара HeyGen
+2025-04-16 16:22:52,657 [ERROR] [e1c410f6-819f-43b7-aa94-45a38020b4ea] Помилка при ініціалізації аватара HeyGen: No connection adapters were found for '[https://api.heygen.com/v1/streaming/sessions/streaming/sessions'
+2025-04-16 16:22:52,673 [ERROR] [e1c410f6-819f-43b7-aa94-45a38020b4ea] Трасування: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\SollarAgent\core\views.py", line 526, in initialize_heygen_avatar
+    response = requests.post(url, headers=headers, json=data, timeout=30)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 697, in send
+    adapter = self.get_adapter(url=request.url)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 792, in get_adapter
+    raise InvalidSchema(f"No connection adapters were found for {url!r}")
+requests.exceptions.InvalidSchema: No connection adapters were found for '[https://api.heygen.com/v1/streaming/sessions/streaming/sessions'
+
+2025-04-16 16:24:10,986 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:24:35,075 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-16 16:25:04,667 [INFO] [aeafd107-3100-46ad-b34f-9c257550744b] Ініціалізація аватара HeyGen
+2025-04-16 16:25:04,686 [ERROR] [aeafd107-3100-46ad-b34f-9c257550744b] Помилка при ініціалізації аватара HeyGen: No connection adapters were found for '[https://api.heygen.com/v1/streaming/sessions'
+2025-04-16 16:25:04,706 [ERROR] [aeafd107-3100-46ad-b34f-9c257550744b] Трасування: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\SollarAgent\core\views.py", line 526, in initialize_heygen_avatar
+    response = requests.post(url, headers=headers, json=data, timeout=30)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 697, in send
+    adapter = self.get_adapter(url=request.url)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 792, in get_adapter
+    raise InvalidSchema(f"No connection adapters were found for {url!r}")
+requests.exceptions.InvalidSchema: No connection adapters were found for '[https://api.heygen.com/v1/streaming/sessions'
+
+2025-04-16 16:27:18,532 [INFO] [c805bcb5-ea7a-47a9-ab72-81f4b1e9994d] Ініціалізація аватара HeyGen
+2025-04-16 16:27:18,539 [ERROR] [c805bcb5-ea7a-47a9-ab72-81f4b1e9994d] Помилка при ініціалізації аватара HeyGen: No connection adapters were found for '[https://api.heygen.com/v1/streaming/sessions'
+2025-04-16 16:27:18,543 [ERROR] [c805bcb5-ea7a-47a9-ab72-81f4b1e9994d] Трасування: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\SollarAgent\core\views.py", line 526, in initialize_heygen_avatar
+    response = requests.post(url, headers=headers, json=data, timeout=30)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 697, in send
+    adapter = self.get_adapter(url=request.url)
+  File "C:\Users\user\Desktop\SollarAgent\venv\lib\site-packages\requests\sessions.py", line 792, in get_adapter
+    raise InvalidSchema(f"No connection adapters were found for {url!r}")
+requests.exceptions.InvalidSchema: No connection adapters were found for '[https://api.heygen.com/v1/streaming/sessions'
+
+2025-04-16 16:27:54,607 [INFO] [482ace2a-6b89-43c0-aca1-0386f66c4a01] Ініціалізація аватара HeyGen
+2025-04-16 16:27:55,145 [ERROR] [482ace2a-6b89-43c0-aca1-0386f66c4a01] Помилка HeyGen API: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:29:25,918 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:30:11,452 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:32:07,730 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Ініціалізація аватара HeyGen
+2025-04-16 16:32:07,740 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] URL для HeyGen API: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 16:32:07,742 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] API Key (перші 10 символів): MTlmMzI5Nz...
+2025-04-16 16:32:07,753 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Avatar ID: Crisanto_Chef_Front_2_public
+2025-04-16 16:32:07,754 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Відправка запиту до HeyGen API для ініціалізації аватара
+2025-04-16 16:32:07,790 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Дані запиту: {"avatar_id": "Crisanto_Chef_Front_2_public", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "text": "Вітаю! Я ваш віртуальний консультант з сонячних панелей. Розкажіть, яке рішення ви шукаєте, і я допоможу підібрати оптимальний варіант для вас.", "settings": {"streaming_mode": "audio_video", "quality": "standard"}}
+2025-04-16 16:32:07,889 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Спроба URL: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 16:32:08,472 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:32:08,473 [ERROR] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:32:08,475 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Спроба URL: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 16:32:08,872 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:32:08,873 [ERROR] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:32:08,875 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Спроба URL: https://api.heygen.com/v1/talk
+2025-04-16 16:32:09,268 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:32:09,269 [ERROR] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Помилка HeyGen API з URL https://api.heygen.com/v1/talk: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:32:09,271 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Спроба URL: https://api.heygen.com/v2/streaming/sessions
+2025-04-16 16:32:09,669 [INFO] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:32:09,670 [ERROR] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Помилка HeyGen API з URL https://api.heygen.com/v2/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:32:09,672 [ERROR] [630084a3-1d2d-4b1b-a1c2-3fd1a66b8ef4] Всі спроби підключення до HeyGen API не вдалися
+2025-04-16 16:35:59,486 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-16 16:36:54,314 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:39:39,274 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Ініціалізація аватара HeyGen
+2025-04-16 16:39:39,303 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] URL для HeyGen API: https://api.heygen.com/v1/streaming/sessions/streaming/sessions
+2025-04-16 16:39:39,305 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] API Key (перші 10 символів): MTlmMzI5Nz...
+2025-04-16 16:39:39,306 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Avatar ID: Crisanto_Chef_Front_2_public
+2025-04-16 16:39:39,308 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Відправка запиту до HeyGen API для ініціалізації аватара
+2025-04-16 16:39:39,310 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Дані запиту: {"avatar_id": "Crisanto_Chef_Front_2_public", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "text": "Вітаю! Я ваш віртуальний консультант з сонячних панелей. Розкажіть, яке рішення ви шукаєте, і я допоможу підібрати оптимальний варіант для вас.", "settings": {"streaming_mode": "audio_video", "quality": "standard"}}
+2025-04-16 16:39:39,321 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Спроба URL: https://api.heygen.com/v1/streaming/sessions/streaming/sessions
+2025-04-16 16:39:39,420 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Ініціалізація аватара HeyGen
+2025-04-16 16:39:39,422 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] URL для HeyGen API: https://api.heygen.com/v1/streaming/sessions/streaming/sessions
+2025-04-16 16:39:39,423 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] API Key (перші 10 символів): MTlmMzI5Nz...
+2025-04-16 16:39:39,436 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Avatar ID: Crisanto_Chef_Front_2_public
+2025-04-16 16:39:39,448 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Відправка запиту до HeyGen API для ініціалізації аватара
+2025-04-16 16:39:39,450 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Дані запиту: {"avatar_id": "Crisanto_Chef_Front_2_public", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "text": "Вітаю! Я ваш віртуальний консультант з сонячних панелей. Розкажіть, яке рішення ви шукаєте, і я допоможу підібрати оптимальний варіант для вас.", "settings": {"streaming_mode": "audio_video", "quality": "standard"}}
+2025-04-16 16:39:39,453 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Спроба URL: https://api.heygen.com/v1/streaming/sessions/streaming/sessions
+2025-04-16 16:39:40,766 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:40,770 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:40,810 [ERROR] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:40,818 [ERROR] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:40,820 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Спроба URL: https://api.heygen.com/v1/streaming/sessions/talk/streaming
+2025-04-16 16:39:40,823 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Спроба URL: https://api.heygen.com/v1/streaming/sessions/talk/streaming
+2025-04-16 16:39:41,207 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:41,209 [ERROR] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/talk/streaming: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:41,224 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Спроба URL: https://api.heygen.com/v1/streaming/sessions/talk
+2025-04-16 16:39:41,259 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:41,275 [ERROR] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/talk/streaming: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:41,291 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Спроба URL: https://api.heygen.com/v1/streaming/sessions/talk
+2025-04-16 16:39:41,618 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:41,619 [ERROR] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/talk: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:41,622 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Спроба URL: https://api.heygen.com/v1/streaming/sessions/v2/streaming/sessions
+2025-04-16 16:39:41,694 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:41,697 [ERROR] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/talk: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:41,700 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Спроба URL: https://api.heygen.com/v1/streaming/sessions/v2/streaming/sessions
+2025-04-16 16:39:42,045 [INFO] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:42,049 [ERROR] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/v2/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:42,052 [ERROR] [05000c20-c8a0-42e9-92b1-2e6d4cbaf79b] Всі спроби підключення до HeyGen API не вдалися
+2025-04-16 16:39:42,086 [INFO] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:39:42,087 [ERROR] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Помилка HeyGen API з URL https://api.heygen.com/v1/streaming/sessions/v2/streaming/sessions: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:39:42,090 [ERROR] [6df3e980-1fae-4d4f-95e7-fabc91f60acb] Всі спроби підключення до HeyGen API не вдалися
+2025-04-16 16:43:40,042 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:45:32,942 [INFO] [8fb2707a-6561-4915-894c-ce29f21cac29] Ініціалізація аватара HeyGen
+2025-04-16 16:45:32,955 [INFO] [8fb2707a-6561-4915-894c-ce29f21cac29] Створення нової сесії HeyGen
+2025-04-16 16:45:32,958 [INFO] [8fb2707a-6561-4915-894c-ce29f21cac29] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/sessions/streaming/sessions
+2025-04-16 16:45:32,961 [INFO] [8fb2707a-6561-4915-894c-ce29f21cac29] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 16:45:33,601 [INFO] [8fb2707a-6561-4915-894c-ce29f21cac29] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:45:33,602 [ERROR] [8fb2707a-6561-4915-894c-ce29f21cac29] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:45:33,608 [ERROR] [8fb2707a-6561-4915-894c-ce29f21cac29] Не вдалося створити сесію HeyGen
+2025-04-16 16:45:41,035 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Отримано новий запит чату
+2025-04-16 16:45:41,036 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Повідомлення користувача: привіт...
+2025-04-16 16:45:43,145 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-16 16:45:44,057 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_wC4i0k3oHZoVkouh75Q1UM0n/messages "HTTP/1.1 200 OK"
+2025-04-16 16:45:47,199 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_wC4i0k3oHZoVkouh75Q1UM0n/runs "HTTP/1.1 200 OK"
+2025-04-16 16:45:47,732 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_wC4i0k3oHZoVkouh75Q1UM0n/runs/run_KePLqDTBCfTFOMs7ylStmrUd "HTTP/1.1 200 OK"
+2025-04-16 16:45:49,086 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_wC4i0k3oHZoVkouh75Q1UM0n/runs/run_KePLqDTBCfTFOMs7ylStmrUd "HTTP/1.1 200 OK"
+2025-04-16 16:45:49,674 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_wC4i0k3oHZoVkouh75Q1UM0n/messages "HTTP/1.1 200 OK"
+2025-04-16 16:45:49,688 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Відповідь OpenAI: Вітаю! Як я можу допомогти вам з вибором сонячних ...
+2025-04-16 16:45:49,691 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Запит до HeyGen API для створення відео з аватаром
+2025-04-16 16:45:49,694 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Створення нової сесії HeyGen
+2025-04-16 16:45:49,697 [INFO] [51c191a7-b669-40de-9849-381e74b70465] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/sessions/streaming/sessions
+2025-04-16 16:45:49,699 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 16:45:50,117 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:45:50,119 [ERROR] [51c191a7-b669-40de-9849-381e74b70465] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:45:50,124 [ERROR] [51c191a7-b669-40de-9849-381e74b70465] Не вдалося створити сесію HeyGen
+2025-04-16 16:45:50,208 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Отримано URL відео від HeyGen за 0.52 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-16 16:45:50,212 [INFO] [51c191a7-b669-40de-9849-381e74b70465] Запит оброблено успішно за 9.18 сек
+2025-04-16 16:46:54,035 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:47:31,698 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:49:56,855 [INFO] [a48360cc-6f0f-41bb-9730-f0c132929e08] Ініціалізація аватара HeyGen
+2025-04-16 16:49:56,859 [INFO] [a48360cc-6f0f-41bb-9730-f0c132929e08] Створення нової сесії HeyGen
+2025-04-16 16:49:56,860 [INFO] [a48360cc-6f0f-41bb-9730-f0c132929e08] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 16:49:56,862 [INFO] [a48360cc-6f0f-41bb-9730-f0c132929e08] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 16:49:57,434 [INFO] [a48360cc-6f0f-41bb-9730-f0c132929e08] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:49:57,435 [ERROR] [a48360cc-6f0f-41bb-9730-f0c132929e08] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:49:57,440 [ERROR] [a48360cc-6f0f-41bb-9730-f0c132929e08] Не вдалося створити сесію HeyGen
+2025-04-16 16:55:44,587 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:56:19,734 [INFO] [18c03a87-88e1-4c21-80fb-758c84feb3d1] Ініціалізація аватара HeyGen
+2025-04-16 16:56:19,738 [INFO] [18c03a87-88e1-4c21-80fb-758c84feb3d1] Створення нової сесії HeyGen
+2025-04-16 16:56:19,739 [INFO] [18c03a87-88e1-4c21-80fb-758c84feb3d1] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 16:56:19,740 [INFO] [18c03a87-88e1-4c21-80fb-758c84feb3d1] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 16:56:20,313 [INFO] [18c03a87-88e1-4c21-80fb-758c84feb3d1] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:56:20,335 [ERROR] [18c03a87-88e1-4c21-80fb-758c84feb3d1] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:56:20,351 [ERROR] [18c03a87-88e1-4c21-80fb-758c84feb3d1] Не вдалося створити сесію HeyGen
+2025-04-16 16:57:57,015 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 16:58:17,497 [INFO] [29f06509-1614-4204-846c-b901ad139011] Ініціалізація аватара HeyGen
+2025-04-16 16:58:17,523 [INFO] [29f06509-1614-4204-846c-b901ad139011] Створення нової сесії HeyGen
+2025-04-16 16:58:17,525 [INFO] [29f06509-1614-4204-846c-b901ad139011] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 16:58:17,529 [INFO] [29f06509-1614-4204-846c-b901ad139011] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 16:58:18,070 [INFO] [29f06509-1614-4204-846c-b901ad139011] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 16:58:18,101 [ERROR] [29f06509-1614-4204-846c-b901ad139011] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 16:58:18,109 [ERROR] [29f06509-1614-4204-846c-b901ad139011] Не вдалося створити сесію HeyGen
+2025-04-16 17:01:51,855 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-16 17:03:39,691 [INFO] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] Ініціалізація аватара HeyGen
+2025-04-16 17:03:39,708 [INFO] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] Створення нової сесії HeyGen
+2025-04-16 17:03:40,202 [INFO] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/sessions
+2025-04-16 17:03:40,228 [INFO] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 17:03:42,575 [INFO] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 17:03:42,581 [ERROR] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 17:03:42,585 [ERROR] [1d664afe-2f2b-4109-a6b0-4f7c950b1368] Не вдалося створити сесію HeyGen
+2025-04-16 17:06:09,019 [INFO] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] Ініціалізація аватара HeyGen
+2025-04-16 17:06:09,022 [INFO] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] Створення нової сесії HeyGen
+2025-04-16 17:06:09,023 [INFO] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] URL для створення сесії HeyGen: https://api.heygen.com/v1/streaming/avatar-live/sessions
+2025-04-16 17:06:09,025 [INFO] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] Дані запиту для створення сесії: {"avatar_id": "Crisanto_Chef_Front_2_public", "quality": "standard", "voice": {"voice_id": "microsoft.uk-UA-OstapNeural", "language": "uk-UA"}, "video_encoding": "VP8", "disable_idle_timeout": true}
+2025-04-16 17:06:09,540 [INFO] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] Отримано відповідь від HeyGen API, статус: 404
+2025-04-16 17:06:09,542 [ERROR] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] Помилка при створенні сесії HeyGen: 404, відповідь: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check y...
+2025-04-16 17:06:09,546 [ERROR] [db18315b-3ebb-4c73-8daa-cc81c5ac60f8] Не вдалося створити сесію HeyGen

@@ -133,5 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # API Keys and Settings
 OPENAI_ASSISTANT_ID = os.getenv('OPENAI_ASSISTANT_ID', 'asst_123456789')  # Замініть на ваш реальний ID
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', 'sk-your-api-key')  # Замініть на ваш реальний ключ
-DID_API_KEY = os.getenv('DID_API_KEY', 'your-did-api-key')  # Замініть на ваш реальний ключ
-DID_URL = os.getenv('DID_URL', 'https://api.d-id.com/talks')
+
+HEYGEN_API_KEY = os.getenv('HEYGEN_API_KEY', 'your-heygen-api-key')
+HEYGEN_AVATAR_ID = os.getenv('HEYGEN_AVATAR_ID', 'your-avatar-id')
+HEYGEN_API_URL = os.getenv('HEYGEN_API_URL', 'https://api.heygen.com/v1/streaming/avatar-live/sessions')

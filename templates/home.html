@@ -206,6 +206,40 @@
             });
         }
         
+        // Функція для ініціалізації WebRTC з'єднання з HeyGen
+        function initHeyGenStream(streamUrl, containerId) {
+            // Завантажуємо скрипт HeyGen SDK
+            const script = document.createElement('script');
+            script.src = 'https://cdn.heygen.com/sdk/latest/heygen-streaming.min.js';
+            script.onload = function() {
+                // Ініціалізуємо HeyGen Streaming SDK
+                const heygenStream = new HeygenStreaming({
+                    streamUrl: streamUrl,
+                    containerId: containerId,
+                    autoPlay: true,
+                    onReady: function() {
+                        console.log('HeyGen аватар готовий до відтворення');
+                    },
+                    onPlaying: function() {
+                        console.log('HeyGen аватар відтворюється');
+                    },
+                    onError: function(error) {
+                        console.error('Помилка HeyGen аватара:', error);
+                        // Якщо виникла помилка, показуємо статичне зображення
+                        const avatarContainer = document.getElementById('avatar-container');
+                        const heygenAvatar = document.getElementById('heygen-avatar');
+                        if (heygenAvatar) heygenAvatar.remove();
+                        
+                        const image = document.createElement('img');
+                        image.id = 'agent-image';
+                        image.src = "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg";
+                        avatarContainer.appendChild(image);
+                    }
+                });
+            };
+            document.head.appendChild(script);
+        }
+
         // Функція для оновлення аватара (відео або зображення)
         function updateAvatar(url) {
             if (!url) return;
@@ -213,74 +247,96 @@
             const avatarContainer = document.getElementById('avatar-container');
             const existingVideo = document.getElementById('agent-video');
             const existingImage = document.getElementById('agent-image');
+            const existingHeyGen = document.getElementById('heygen-avatar');
             
-            // Визначаємо, чи це відео чи зображення
-            const isVideo = url.includes('.mp4') || url.includes('result_url') || url.includes('d-id.com') && !url.includes('image.jpeg');
+            // Визначаємо, чи це потокове відео HeyGen (WebRTC) чи звичайне відео/зображення
+            const isHeyGenStream = url.includes('heygen.com') || url.includes('stream');
             
-            if (isVideo) {
-                // Якщо це відео
+            if (isHeyGenStream) {
+                // Якщо це потокове відео HeyGen
+                if (existingVideo) existingVideo.remove();
                 if (existingImage) existingImage.remove();
+                if (existingHeyGen) existingHeyGen.remove();
                 
-                if (!existingVideo) {
-                    // Якщо відео елемент не існує, створюємо його
-                    const video = document.createElement('video');
-                    video.id = 'agent-video';
-                    video.autoplay = true;
-                    video.controls = false;
-                    video.muted = false;
-                    video.playsInline = true;
-                    video.addEventListener('error', function(e) {
-                        console.error('Помилка відтворення відео:', e);
-                        // Якщо виникла помилка з відео, показуємо статичне зображення
-                        updateAvatar("https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg");
-                    });
-                    avatarContainer.appendChild(video);
-                }
+                // Створюємо контейнер для WebRTC
+                const webrtcContainer = document.createElement('div');
+                webrtcContainer.id = 'heygen-avatar';
+                webrtcContainer.className = 'heygen-avatar';
+                avatarContainer.appendChild(webrtcContainer);
                 
-                // Оновлюємо джерело відео
-                const video = document.getElementById('agent-video');
-                video.src = url;
-                
-                // Спроба відтворити відео
-                const playPromise = video.play();
-                if (playPromise !== undefined) {
-                    playPromise.then(_ => {
-                        // Відтворення почалося успішно
-                        console.log('Відео відтворюється');
-                    }).catch(error => {
-                        console.error('Помилка автоматичного відтворення відео:', error);
-                        // Якщо автовідтворення не працює, показуємо кнопку для ручного відтворення
-                        const playButton = document.createElement('button');
-                        playButton.innerHTML = '<i class="fas fa-play"></i>';
-                        playButton.className = 'play-button';
-                        playButton.onclick = function() {
-                            video.play();
-                            this.remove();
-                        };
-                        avatarContainer.appendChild(playButton);
-                    });
-                }
+                // Ініціалізуємо WebRTC з'єднання з HeyGen
+                initHeyGenStream(url, webrtcContainer.id);
             } else {
-                // Якщо це зображення
-                if (existingVideo) {
-                    existingVideo.pause();
-                    existingVideo.remove();
-                }
+                // Для звичайних відео або зображень використовуємо існуючу логіку
+                const isVideo = url.includes('.mp4') || url.includes('result_url') || url.includes('d-id.com') && !url.includes('image.jpeg');
                 
-                if (!existingImage) {
-                    // Якщо зображення не існує, створюємо його
-                    const image = document.createElement('img');
-                    image.id = 'agent-image';
-                    image.addEventListener('error', function() {
-                        // Якщо зображення не завантажилося, використовуємо запасне
-                        this.src = "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg";
-                    });
-                    avatarContainer.appendChild(image);
+                if (isVideo) {
+                    // Якщо це відео
+                    if (existingImage) existingImage.remove();
+                    if (existingHeyGen) existingHeyGen.remove();
+                    
+                    if (!existingVideo) {
+                        // Якщо відео елемент не існує, створюємо його
+                        const video = document.createElement('video');
+                        video.id = 'agent-video';
+                        video.autoplay = true;
+                        video.controls = false;
+                        video.muted = false;
+                        video.playsInline = true;
+                        video.addEventListener('error', function(e) {
+                            console.error('Помилка відтворення відео:', e);
+                            // Якщо виникла помилка з відео, показуємо статичне зображення
+                            updateAvatar("https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg");
+                        });
+                        avatarContainer.appendChild(video);
+                    }
+                    
+                    // Оновлюємо джерело відео
+                    const video = document.getElementById('agent-video');
+                    video.src = url;
+                    
+                    // Спроба відтворити відео
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(_ => {
+                            // Відтворення почалося успішно
+                            console.log('Відео відтворюється');
+                        }).catch(error => {
+                            console.error('Помилка автоматичного відтворення відео:', error);
+                            // Якщо автовідтворення не працює, показуємо кнопку для ручного відтворення
+                            const playButton = document.createElement('button');
+                            playButton.innerHTML = '<i class="fas fa-play"></i>';
+                            playButton.className = 'play-button';
+                            playButton.onclick = function() {
+                                video.play();
+                                this.remove();
+                            };
+                            avatarContainer.appendChild(playButton);
+                        });
+                    }
+                } else {
+                    // Якщо це зображення
+                    if (existingVideo) {
+                        existingVideo.pause();
+                        existingVideo.remove();
+                    }
+                    if (existingHeyGen) existingHeyGen.remove();
+                    
+                    if (!existingImage) {
+                        // Якщо зображення не існує, створюємо його
+                        const image = document.createElement('img');
+                        image.id = 'agent-image';
+                        image.addEventListener('error', function() {
+                            // Якщо зображення не завантажилося, використовуємо запасне
+                            this.src = "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg";
+                        });
+                        avatarContainer.appendChild(image);
+                    }
+                    
+                    // Оновлюємо джерело зображення
+                    const image = document.getElementById('agent-image');
+                    image.src = url;
                 }
-                
-                // Оновлюємо джерело зображення
-                const image = document.getElementById('agent-image');
-                image.src = url;
             }
         }
         
@@ -304,10 +360,18 @@
         
         // Ініціалізація при завантаженні сторінки
         window.onload = function() {
+            // Ініціалізуємо розпізнавання мови
             initSpeechRecognition();
             
-            // Додаємо початкове зображення аватара
-            updateAvatar("https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg");
+            // Ініціалізуємо аватар з URL, отриманим від сервера
+            const initialStreamUrl = "{{ initial_stream_url|escapejs }}";
+            if (initialStreamUrl) {
+                console.log('Ініціалізація аватара з URL:', initialStreamUrl);
+                updateAvatar(initialStreamUrl);
+            } else {
+                console.log('Ініціалізація аватара зі статичним зображенням');
+                updateAvatar("https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg");
+            }
         };
     </script>
 </body>

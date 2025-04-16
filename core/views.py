@@ -33,9 +33,18 @@ assistant_id = settings.OPENAI_ASSISTANT_ID  # Отримуємо ID асист�
 
 
 def home(request):
-    """Відображення головної сторінки"""
-    logger.info(f"Запит головної сторінки. IP: {get_client_ip(request)}")
-    return render(request, 'home.html')
+    """
+    Головна сторінка з чатом
+    """
+    # Генеруємо унікальний ID для запиту
+    request_id = str(uuid.uuid4())
+    
+    # Створюємо сесію з аватаром HeyGen для початкового відображення
+    initial_stream_url = initialize_heygen_avatar(request_id)
+    print(initial_stream_url)
+    print(settings.HEYGEN_API_URL)
+    
+    return render(request, 'home.html', {'initial_stream_url': initial_stream_url})
 
 def get_client_ip(request):
     """Отримання IP-адреси клієнта"""
@@ -80,12 +89,12 @@ def chat(request):
         
         logger.info(f"[{request_id}] Відповідь OpenAI: {ai_response[:50]}...")
         
-        # Генеруємо відео з аватаром, який говорить текст відповіді
+        # Генеруємо відео з аватаром HeyGen, який говорить текст відповіді
         video_start_time = time.time()
-        video_url = generate_talking_avatar(ai_response, request_id)
+        video_url = generate_heygen_avatar(ai_response, request_id)
         video_time = time.time() - video_start_time
         
-        logger.info(f"[{request_id}] Отримано URL відео від D-ID за {video_time:.2f} сек: {video_url[:50]}...")
+        logger.info(f"[{request_id}] Отримано URL відео від HeyGen за {video_time:.2f} сек: {video_url[:50]}...")
         
         # Формуємо відповідь
         response = {
@@ -293,117 +302,211 @@ def get_openai_response(user_message, request_id):
         logger.error(traceback.format_exc())
         return None
 
-def generate_talking_avatar(text, request_id):
+def generate_heygen_avatar(text, request_id):
     """
-    Генерує відео з аватаром, який говорить текст
+    Генерує відео з аватаром HeyGen, який говорить текст
     """
-    logger.info(f"[{request_id}] Запит до D-ID API для створення відео")
+    logger.info(f"[{request_id}] Запит до HeyGen API для створення відео з аватаром")
     
-    # Обмежуємо довжину тексту до 1000 символів (обмеження D-ID API)
+    # Обмежуємо довжину тексту
     if len(text) > 1000:
-        logger.warning(f"[{request_id}] Текст для D-ID API занадто довгий ({len(text)} символів), обмежуємо до 1000")
+        logger.warning(f"[{request_id}] Текст для HeyGen API занадто довгий ({len(text)} символів), обмежуємо до 1000")
         text = text[:1000]
     
     # URL для статичного зображення аватара (використовується як запасний варіант)
     avatar_url = "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg"
     
     try:
-        # Налаштування для запиту до D-ID API
-        url = settings.DID_URL
+        # 1. Створюємо сесію з аватаром
+        session_data = create_heygen_session(request_id)
+        
+        if not session_data or "session_id" not in session_data:
+            logger.error(f"[{request_id}] Не вдалося створити сесію HeyGen")
+            return avatar_url
+        
+        session_id = session_data["session_id"]
+        stream_url = session_data.get("stream_url", "")
+        
+        logger.info(f"[{request_id}] Створено сесію HeyGen: {session_id}")
+        logger.info(f"[{request_id}] Stream URL: {stream_url}")
+        
+        # 2. Відправляємо текст для озвучування
+        if send_text_to_avatar(session_id, text, request_id):
+            logger.info(f"[{request_id}] Успішно відправлено текст для озвучування")
+            return stream_url
+        else:
+            logger.error(f"[{request_id}] Не вдалося відправити текст для озвучування")
+            return avatar_url
+    
+    except Exception as e:
+        logger.error(f"[{request_id}] Помилка при генерації відео HeyGen: {str(e)}")
+        logger.error(f"[{request_id}] Трасування: {traceback.format_exc()}")
+        return avatar_url
+
+def initialize_heygen_avatar(request_id):
+    """
+    Ініціалізує аватар HeyGen для початкового відображення
+    """
+    logger.info(f"[{request_id}] Ініціалізація аватара HeyGen")
+    
+    try:
+        # Створюємо сесію з аватаром
+        session_data = create_heygen_session(request_id)
+        
+        if not session_data or "session_id" not in session_data:
+            logger.error(f"[{request_id}] Не вдалося створити сесію HeyGen")
+            return ""
+        
+        session_id = session_data["session_id"]
+        stream_url = session_data.get("stream_url", "")
+        
+        logger.info(f"[{request_id}] Створено сесію HeyGen: {session_id}")
+        logger.info(f"[{request_id}] Stream URL: {stream_url}")
+        
+        # Відправляємо привітальне повідомлення
+        welcome_message = "Вітаю! Я ваш віртуальний консультант з сонячних панелей. Розкажіть, яке рішення ви шукаєте, і я допоможу підібрати оптимальний варіант для вас."
+        
+        if send_text_to_avatar(session_id, welcome_message, request_id):
+            logger.info(f"[{request_id}] Успішно відправлено привітальне повідомлення")
+            return stream_url
+        else:
+            logger.error(f"[{request_id}] Не вдалося відправити привітальне повідомлення")
+            return ""
+    
+    except Exception as e:
+        logger.error(f"[{request_id}] Помилка при ініціалізації аватара HeyGen: {str(e)}")
+        logger.error(f"[{request_id}] Трасування: {traceback.format_exc()}")
+        return ""
+
+def create_heygen_session(request_id):
+    """
+    Створює нову сесію з аватаром HeyGen
+    """
+    logger.info(f"[{request_id}] Створення нової сесії HeyGen")
+    
+    try:
+        # Налаштування для запиту до HeyGen API
+        url = settings.HEYGEN_API_URL
+        logger.info(f"[{request_id}] URL для створення сесії HeyGen: {url}")
+        
         headers = {
-            "Authorization": f"Basic {settings.DID_API_KEY}",
+            "X-Api-Key": settings.HEYGEN_API_KEY,
             "Content-Type": "application/json"
         }
         
         # Дані для запиту
         data = {
-            "presenter_id": "hussan",
-            "script": {
-                "type": "text",
-                "input": text,
-                "provider": {
-                    "type": "microsoft",
-                    "voice_id": "uk-UA-OstapNeural"
-                },
-                "ssml": "false"
+            "avatar_id": settings.HEYGEN_AVATAR_ID,
+            "quality": "standard",
+            "voice": {
+                "voice_id": "microsoft.uk-UA-OstapNeural",
+                "language": "uk-UA"
             },
-            "config": {
-                "fluent": "true",
-                "pad_audio": "0.0"
-            }
+            "video_encoding": "VP8",
+            "disable_idle_timeout": True
         }
         
-        # Відправка запиту до D-ID API для створення розмови
-        logger.debug(f"[{request_id}] Відправка запиту до D-ID API: {settings.DID_URL}")
-        did_response = requests.post(settings.DID_URL, headers=headers, json=data, timeout=30)
+        logger.info(f"[{request_id}] Дані запиту для створення сесії: {json.dumps(data, ensure_ascii=False)}")
         
-        # Перевірка успішності запиту
-        status_code = did_response.status_code
-        logger.debug(f"[{request_id}] Отримано відповідь від D-ID API, статус: {status_code}")
+        # Відправка запиту до HeyGen API
+        response = requests.post(url, headers=headers, json=data, timeout=30)
+        status_code = response.status_code
         
-        if status_code == 200 or status_code == 201:
-            result = did_response.json()
-            logger.debug(f"[{request_id}] Отримано відповідь від D-ID API: {result}")
-            
-            # Отримуємо ID розмови
-            talk_id = result.get("id")
-            
-            if not talk_id:
-                logger.warning(f"[{request_id}] D-ID API не повернув ID розмови")
-                return avatar_url
-            
-            # Чекаємо, поки відео буде готове
-            status_url = f"{settings.DID_URL}/{talk_id}"
-            max_attempts = 10
-            attempts = 0
-            
-            while attempts < max_attempts:
-                attempts += 1
-                logger.debug(f"[{request_id}] Перевірка статусу відео, спроба {attempts}/{max_attempts}")
-                
-                status_response = requests.get(status_url, headers=headers)
-                
-                if status_response.status_code == 200:
-                    status_data = status_response.json()
-                    status = status_data.get("status")
-                    
-                    if status == "done":
-                        video_url = status_data.get("result_url")
-                        if video_url:
-                            logger.info(f"[{request_id}] Успішно отримано URL відео: {video_url[:50]}...")
-                            return video_url
-                        else:
-                            logger.warning(f"[{request_id}] D-ID API повернув статус 'done', але URL відео відсутній")
-                            break
-                    elif status == "error":
-                        logger.error(f"[{request_id}] D-ID API повернув помилку: {status_data.get('error', 'Невідома помилка')}")
-                        break
-                    elif status in ["created", "processing"]:
-                        logger.debug(f"[{request_id}] Відео все ще обробляється, статус: {status}")
-                        time.sleep(2)  # Чекаємо 2 секунди перед наступною перевіркою
-                    else:
-                        logger.warning(f"[{request_id}] Невідомий статус відео: {status}")
-                        break
-                else:
-                    logger.error(f"[{request_id}] Помилка при перевірці статусу відео: {status_response.status_code}")
-                    break
-            
-            if attempts >= max_attempts:
-                logger.warning(f"[{request_id}] Перевищено максимальну кількість спроб перевірки статусу відео")
+        logger.info(f"[{request_id}] Отримано відповідь від HeyGen API, статус: {status_code}")
+        
+        if status_code == 200:
+            result = response.json()
+            logger.info(f"[{request_id}] Успішно створено сесію HeyGen: {json.dumps(result, ensure_ascii=False)}")
+            return result
         else:
-            response_text = did_response.text
-            logger.error(f"[{request_id}] Помилка D-ID API: {status_code}, відповідь: {response_text[:200]}...")
-        
-        # Якщо не вдалося отримати відео, повертаємо статичне зображення
-        logger.info(f"[{request_id}] Використовуємо статичне зображення замість відео")
-        return "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg"
+            response_text = response.text
+            logger.error(f"[{request_id}] Помилка при створенні сесії HeyGen: {status_code}, відповідь: {response_text[:200]}...")
+            return None
     
-    except requests.RequestException as e:
-        logger.error(f"[{request_id}] Помилка мережі при запиті до D-ID API: {str(e)}")
-        # Повертаємо статичне зображення у випадку помилки
-        return "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg"
     except Exception as e:
-        logger.error(f"[{request_id}] Неочікувана помилка при генерації відео: {str(e)}")
+        logger.error(f"[{request_id}] Помилка при створенні сесії HeyGen: {str(e)}")
         logger.error(f"[{request_id}] Трасування: {traceback.format_exc()}")
-        # Повертаємо статичне зображення у випадку помилки
-        return "https://create-images-results.d-id.com/DefaultPresenters/hussan/image.jpeg"
+        return None
+
+def send_text_to_avatar(session_id, text, request_id):
+    """
+    Відправляє текст для озвучування аватаром HeyGen
+    """
+    logger.info(f"[{request_id}] Відправка тексту для озвучування аватаром HeyGen")
+    
+    try:
+        # Налаштування для запиту до HeyGen API
+        base_url = settings.HEYGEN_API_URL.replace('/sessions', '')
+        url = f"{base_url}/tasks"
+        
+        logger.info(f"[{request_id}] URL для відправки тексту: {url}")
+        
+        headers = {
+            "X-Api-Key": settings.HEYGEN_API_KEY,
+            "Content-Type": "application/json"
+        }
+        
+        # Дані для запиту
+        data = {
+            "session_id": session_id,
+            "task_type": "REPEAT",
+            "text": text
+        }
+        
+        logger.info(f"[{request_id}] Дані запиту для відправки тексту: {json.dumps(data, ensure_ascii=False)}")
+        
+        # Відправка запиту до HeyGen API
+        response = requests.post(url, headers=headers, json=data, timeout=30)
+        status_code = response.status_code
+        
+        logger.info(f"[{request_id}] Отримано відповідь від HeyGen API, статус: {status_code}")
+        
+        if status_code == 200:
+            result = response.json()
+            logger.info(f"[{request_id}] Успішно відправлено текст для озвучування: {json.dumps(result, ensure_ascii=False)}")
+            return True
+        else:
+            response_text = response.text
+            logger.error(f"[{request_id}] Помилка при відправці тексту для озвучування: {status_code}, відповідь: {response_text[:200]}...")
+            return False
+    
+    except Exception as e:
+        logger.error(f"[{request_id}] Помилка при відправці тексту для озвучування: {str(e)}")
+        logger.error(f"[{request_id}] Трасування: {traceback.format_exc()}")
+        return False
+
+def close_heygen_session(session_id, request_id):
+    """
+    Закриває сесію з аватаром HeyGen
+    """
+    logger.info(f"[{request_id}] Закриття сесії HeyGen: {session_id}")
+    
+    try:
+        # Налаштування для запиту до HeyGen API
+        url = f"{settings.HEYGEN_API_URL}/{session_id}"
+        
+        logger.info(f"[{request_id}] URL для закриття сесії: {url}")
+        
+        headers = {
+            "X-Api-Key": settings.HEYGEN_API_KEY
+        }
+        
+        # Відправка запиту до HeyGen API
+        response = requests.delete(url, headers=headers, timeout=30)
+        status_code = response.status_code
+        
+        logger.info(f"[{request_id}] Отримано відповідь від HeyGen API, статус: {status_code}")
+        
+        if status_code == 200:
+            result = response.json()
+            logger.info(f"[{request_id}] Успішно закрито сесію HeyGen: {json.dumps(result, ensure_ascii=False)}")
+            return True
+        else:
+            response_text = response.text
+            logger.error(f"[{request_id}] Помилка при закритті сесії HeyGen: {status_code}, відповідь: {response_text[:200]}...")
+            return False
+    
+    except Exception as e:
+        logger.error(f"[{request_id}] Помилка при закритті сесії HeyGen: {str(e)}")
+        logger.error(f"[{request_id}] Трасування: {traceback.format_exc()}")
+        return False

@@ -114,6 +114,24 @@ body {
     border-radius: var(--border-radius);
 }
 
+/* Стилі для HeyGen аватара */
+.heygen-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heygen-avatar video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 /* Інформація про сонячні панелі */
 .solar-info {
     padding: 15px;
