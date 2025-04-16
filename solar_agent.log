@@ -1,0 +1,419 @@
+2025-04-10 12:43:37,249 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:43:37,340 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:43:37,505 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:43:38,185 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:51:19,101 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:51:19,334 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:51:21,049 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:51:21,145 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 12:55:24,473 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:55:24,624 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:55:24,696 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:55:24,976 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:55:56,368 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:55:56,576 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:55:58,346 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 12:56:01,394 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 13:04:07,812 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 13:04:11,313 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 13:04:53,269 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Новий запит чату. IP: 127.0.0.1
+2025-04-10 13:04:53,273 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Повідомлення користувача: 'дай мені топ 6 найпопулярніших виробників сонячних...' (скорочено)
+2025-04-10 13:04:53,280 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Запит до OpenAI Assistant API
+2025-04-10 13:04:54,315 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 13:04:54,874 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/messages "HTTP/1.1 200 OK"
+2025-04-10 13:04:55,918 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/runs "HTTP/1.1 200 OK"
+2025-04-10 13:04:56,307 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/runs/run_dvqU6vblJKyt8lhNcry1qm3I "HTTP/1.1 200 OK"
+2025-04-10 13:04:57,649 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/runs/run_dvqU6vblJKyt8lhNcry1qm3I "HTTP/1.1 200 OK"
+2025-04-10 13:04:58,986 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/runs/run_dvqU6vblJKyt8lhNcry1qm3I "HTTP/1.1 200 OK"
+2025-04-10 13:05:02,297 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/runs/run_dvqU6vblJKyt8lhNcry1qm3I "HTTP/1.1 200 OK"
+2025-04-10 13:05:03,988 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/runs/run_dvqU6vblJKyt8lhNcry1qm3I "HTTP/1.1 200 OK"
+2025-04-10 13:05:04,597 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_Sc7dvlfQ7ti2yZQusWeLmyKv/messages "HTTP/1.1 200 OK"
+2025-04-10 13:05:04,612 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Отримано відповідь від OpenAI за 11.29 сек
+2025-04-10 13:05:04,613 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 13:05:04,624 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Знайдено ключові слова для пошуку: сучасні сонячні панелі характеристики
+2025-04-10 13:05:04,625 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Пошук в Google: https://www.google.com/search?q=%D1%81%D1%83%D1%87%D0%B0%D1%81%D0%BD%D1%96%20%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 13:05:05,231 [WARNING] [4a72906d-543f-4057-b847-2f58205ffdd3] Не вдалося знайти інформацію в Google
+2025-04-10 13:05:05,234 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Запит до D-ID API для створення відео
+2025-04-10 13:05:05,235 [WARNING] [4a72906d-543f-4057-b847-2f58205ffdd3] Текст для D-ID API занадто довгий (1016 символів), обмежуємо до 1000
+2025-04-10 13:05:06,071 [ERROR] [4a72906d-543f-4057-b847-2f58205ffdd3] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 13:05:06,075 [WARNING] [4a72906d-543f-4057-b847-2f58205ffdd3] Не вдалося отримати URL відео від D-ID за 0.84 сек
+2025-04-10 13:05:06,077 [INFO] [4a72906d-543f-4057-b847-2f58205ffdd3] Запит оброблено успішно за 12.81 сек
+2025-04-10 13:32:34,949 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 13:34:59,512 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 13:35:38,975 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Новий запит чату. IP: 127.0.0.1
+2025-04-10 13:35:38,977 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Повідомлення користувача: 'привіт порекомендуй найкращі бренди сонячних панел...' (скорочено)
+2025-04-10 13:35:38,978 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Запит до OpenAI Assistant API
+2025-04-10 13:35:40,496 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 13:35:41,374 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/messages "HTTP/1.1 200 OK"
+2025-04-10 13:35:42,517 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs "HTTP/1.1 200 OK"
+2025-04-10 13:35:42,920 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:44,258 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:45,645 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:47,005 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:48,381 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:49,790 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:51,412 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/runs/run_abaGRjWeoT5lAej07NtBfAD2 "HTTP/1.1 200 OK"
+2025-04-10 13:35:51,689 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_gHEwgOe8JCBgDHOP82Blg3XG/messages "HTTP/1.1 200 OK"
+2025-04-10 13:35:51,695 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Отримано відповідь від OpenAI за 12.71 сек
+2025-04-10 13:35:51,695 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 13:35:51,708 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Знайдено ключові слова для пошуку: полікристалічні панелі
+2025-04-10 13:35:51,709 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Пошук в Google: https://www.google.com/search?q=%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 13:35:52,332 [WARNING] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Не вдалося знайти інформацію в Google
+2025-04-10 13:35:52,333 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Запит до D-ID API для створення відео
+2025-04-10 13:35:52,334 [WARNING] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Текст для D-ID API занадто довгий (1433 символів), обмежуємо до 1000
+2025-04-10 13:35:53,209 [ERROR] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 13:35:53,209 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Використовуємо статичне зображення замість відео
+2025-04-10 13:35:53,211 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Отримано URL відео від D-ID за 0.88 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 13:35:53,211 [INFO] [7f51ecba-b090-4bb6-8dcd-93fdfc74ac73] Запит оброблено успішно за 14.24 сек
+2025-04-10 13:36:28,130 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Новий запит чату. IP: 127.0.0.1
+2025-04-10 13:36:28,130 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Повідомлення користувача: 'розкажи детальніше про сан павер...' (скорочено)
+2025-04-10 13:36:28,131 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Запит до OpenAI Assistant API
+2025-04-10 13:36:28,646 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 13:36:29,038 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/messages "HTTP/1.1 200 OK"
+2025-04-10 13:36:29,989 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs "HTTP/1.1 200 OK"
+2025-04-10 13:36:31,330 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:32,905 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:34,259 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:35,615 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:37,034 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:38,379 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:39,761 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:41,184 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:42,556 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:43,904 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:45,268 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/runs/run_I3s6ZWsVfPpsogyMLs9YLZE4 "HTTP/1.1 200 OK"
+2025-04-10 13:36:45,801 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_ujRva9YPCeLnC4APAxGR5uQW/messages "HTTP/1.1 200 OK"
+2025-04-10 13:36:45,807 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Отримано відповідь від OpenAI за 17.68 сек
+2025-04-10 13:36:45,808 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 13:36:45,817 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Знайдено ключові слова для пошуку: монокристалічні панелі, сонячні панелі, потужність панелей
+2025-04-10 13:36:45,817 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D1%82%D1%83%D0%B6%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B5%D0%B9%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 13:36:47,147 [WARNING] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Не вдалося знайти інформацію в Google
+2025-04-10 13:36:47,149 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Запит до D-ID API для створення відео
+2025-04-10 13:36:47,149 [WARNING] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Текст для D-ID API занадто довгий (1741 символів), обмежуємо до 1000
+2025-04-10 13:36:48,029 [ERROR] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 13:36:48,029 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Використовуємо статичне зображення замість відео
+2025-04-10 13:36:48,030 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Отримано URL відео від D-ID за 0.88 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 13:36:48,031 [INFO] [6a9852e9-f7f5-44d8-aa45-bd25a55d6927] Запит оброблено успішно за 19.90 сек
+2025-04-10 14:07:44,837 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 14:08:27,429 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Новий запит чату. IP: 127.0.0.1
+2025-04-10 14:08:27,436 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Повідомлення користувача: 'розкажи про виробника Longi...' (скорочено)
+2025-04-10 14:08:27,438 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Запит до OpenAI Assistant API
+2025-04-10 14:08:28,185 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 14:08:28,648 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/messages "HTTP/1.1 200 OK"
+2025-04-10 14:08:29,590 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs "HTTP/1.1 200 OK"
+2025-04-10 14:08:30,094 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:31,460 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:32,815 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:34,232 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:35,785 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:37,137 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:38,470 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/runs/run_OxhljsquY5JaMZU0FECfZXKC "HTTP/1.1 200 OK"
+2025-04-10 14:08:39,005 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_zwAFNy5Yd8O4xOaZUMGllXW7/messages "HTTP/1.1 200 OK"
+2025-04-10 14:08:39,015 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Отримано відповідь від OpenAI за 11.58 сек
+2025-04-10 14:08:39,017 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 14:08:39,029 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Знайдено ключові слова для пошуку: монокристалічні панелі
+2025-04-10 14:08:39,030 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 14:08:39,676 [WARNING] [496dcdc7-717b-4151-98d2-d31b4b249486] Не вдалося знайти інформацію в Google
+2025-04-10 14:08:39,679 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Запит до D-ID API для створення відео
+2025-04-10 14:08:39,679 [WARNING] [496dcdc7-717b-4151-98d2-d31b4b249486] Текст для D-ID API занадто довгий (1609 символів), обмежуємо до 1000
+2025-04-10 14:08:41,501 [ERROR] [496dcdc7-717b-4151-98d2-d31b4b249486] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 14:08:41,501 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Використовуємо статичне зображення замість відео
+2025-04-10 14:08:41,504 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Отримано URL відео від D-ID за 1.82 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 14:08:41,504 [INFO] [496dcdc7-717b-4151-98d2-d31b4b249486] Запит оброблено успішно за 14.08 сек
+2025-04-10 14:15:04,856 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 14:15:09,351 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 14:15:10,128 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 14:15:10,726 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 14:15:11,090 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 14:15:11,403 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 15:45:47,330 [WARNING] Not Found: /api/calculate/
+2025-04-10 15:45:52,756 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 15:56:36,940 [INFO] C:\Users\user\Desktop\SollarAgent\SollarAgentProject\settings.py changed, reloading.
+2025-04-10 15:57:15,331 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 16:01:43,932 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 16:20:30,087 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Новий запит чату. IP: 127.0.0.1
+2025-04-10 16:20:30,132 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Повідомлення користувача: 'розкажи про сонячні панелі...' (скорочено)
+2025-04-10 16:20:30,160 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Запит до OpenAI Assistant API
+2025-04-10 16:20:32,254 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 16:20:34,011 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/messages "HTTP/1.1 200 OK"
+2025-04-10 16:20:35,746 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs "HTTP/1.1 200 OK"
+2025-04-10 16:20:36,300 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:37,626 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:39,014 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:40,356 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:41,688 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:43,154 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:44,479 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:45,841 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:47,226 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:48,581 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:50,092 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:51,557 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:53,085 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:54,418 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:55,875 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:20:57,246 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:24,383 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:25,776 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:27,260 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:28,626 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:29,960 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:31,320 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:32,647 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:34,007 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:35,434 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:36,771 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:38,133 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:39,574 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:40,906 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:42,255 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:43,591 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:45,602 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:46,927 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/runs/run_FEs9boevFtEYapfV8roFe7Xx "HTTP/1.1 200 OK"
+2025-04-10 16:21:47,220 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_9efpzj0Iroj7Bxio7nLpgkpb/messages "HTTP/1.1 200 OK"
+2025-04-10 16:21:47,226 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Отримано відповідь від OpenAI за 77.06 сек
+2025-04-10 16:21:47,228 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 16:21:47,244 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Знайдено ключові слова для пошуку: монокристалічні панелі, полікристалічні панелі, тонкоплівкові панелі
+2025-04-10 16:21:47,249 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D0%BF%D0%BB%D1%96%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 16:21:47,535 [WARNING] [3679471e-425b-45dc-887b-9cbb774cf45f] Не вдалося знайти інформацію в Google
+2025-04-10 16:21:47,539 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Запит до D-ID API для створення відео
+2025-04-10 16:21:47,540 [WARNING] [3679471e-425b-45dc-887b-9cbb774cf45f] Текст для D-ID API занадто довгий (1867 символів), обмежуємо до 1000
+2025-04-10 16:21:49,425 [ERROR] [3679471e-425b-45dc-887b-9cbb774cf45f] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 16:21:49,428 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Використовуємо статичне зображення замість відео
+2025-04-10 16:21:49,434 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Отримано URL відео від D-ID за 1.89 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 16:21:49,434 [INFO] [3679471e-425b-45dc-887b-9cbb774cf45f] Запит оброблено успішно за 79.36 сек
+2025-04-10 16:24:37,020 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 16:29:30,137 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 16:29:46,435 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Новий запит чату. IP: 127.0.0.1
+2025-04-10 16:29:46,437 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Повідомлення користувача: 'розкажи про сонячні панелі...' (скорочено)
+2025-04-10 16:29:46,438 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Запит до OpenAI Assistant API
+2025-04-10 16:29:47,333 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 16:29:47,782 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/messages "HTTP/1.1 200 OK"
+2025-04-10 16:29:48,865 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs "HTTP/1.1 200 OK"
+2025-04-10 16:29:49,298 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:50,771 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:52,102 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:53,443 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:54,776 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:56,134 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:57,492 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:29:58,876 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:30:00,221 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:30:01,658 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:30:02,999 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:30:04,365 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/runs/run_sIx739Y8rxwLxl7MrPUwEaHx "HTTP/1.1 200 OK"
+2025-04-10 16:30:04,600 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_NIflF2LCBsj6S8NnBSImkNJR/messages "HTTP/1.1 200 OK"
+2025-04-10 16:30:04,605 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Отримано відповідь від OpenAI за 18.17 сек
+2025-04-10 16:30:04,606 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 16:30:04,618 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Знайдено ключові слова для пошуку: монокристалічні панелі, полікристалічні панелі, тонкоплівкові панелі
+2025-04-10 16:30:04,619 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D0%BF%D0%BB%D1%96%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 16:30:04,833 [WARNING] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Не вдалося знайти інформацію в Google
+2025-04-10 16:30:04,836 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Запит до D-ID API для створення відео
+2025-04-10 16:30:04,837 [WARNING] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Текст для D-ID API занадто довгий (1701 символів), обмежуємо до 1000
+2025-04-10 16:30:05,704 [ERROR] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 16:30:05,705 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Використовуємо статичне зображення замість відео
+2025-04-10 16:30:05,707 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Отримано URL відео від D-ID за 0.87 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 16:30:05,709 [INFO] [79740d2a-7ee5-4121-8932-3ad49dcd49cd] Запит оброблено успішно за 19.27 сек
+2025-04-10 16:30:28,907 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Новий запит чату. IP: 127.0.0.1
+2025-04-10 16:30:28,908 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Повідомлення користувача: 'і які самі наякращі...' (скорочено)
+2025-04-10 16:30:28,909 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Запит до OpenAI Assistant API
+2025-04-10 16:30:29,332 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 16:30:29,738 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/messages "HTTP/1.1 200 OK"
+2025-04-10 16:30:31,335 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs "HTTP/1.1 200 OK"
+2025-04-10 16:30:31,708 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:33,154 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:34,541 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:35,940 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:37,293 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:38,756 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:40,470 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:41,829 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:43,883 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:45,282 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:46,633 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:48,054 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:49,420 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:50,813 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:52,185 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:53,511 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:55,050 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:56,373 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:57,735 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:30:59,071 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:00,508 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:01,901 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:03,289 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:04,629 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:05,992 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:07,382 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:08,776 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:10,149 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:13,034 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:14,458 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:15,800 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:17,165 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:18,485 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:19,883 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:21,279 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:22,651 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:23,994 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:26,212 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:27,649 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:29,025 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:30,383 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:31,784 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:33,650 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:35,170 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:36,602 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:37,971 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:39,357 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:40,955 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:42,353 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/runs/run_O64CkcFJpXfDNtAADXTm9oQN "HTTP/1.1 200 OK"
+2025-04-10 16:31:42,586 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_IOcW2UiDz8R3iM0yHjRh1ems/messages "HTTP/1.1 200 OK"
+2025-04-10 16:31:42,591 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Отримано відповідь від OpenAI за 73.67 сек
+2025-04-10 16:31:42,592 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 16:31:42,601 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Знайдено ключові слова для пошуку: монокристалічні панелі, полікристалічні панелі, тонкоплівкові панелі
+2025-04-10 16:31:42,602 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D0%BF%D0%BB%D1%96%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 16:31:42,754 [WARNING] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Не вдалося знайти інформацію в Google
+2025-04-10 16:31:42,756 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Запит до D-ID API для створення відео
+2025-04-10 16:31:42,757 [WARNING] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Текст для D-ID API занадто довгий (1946 символів), обмежуємо до 1000
+2025-04-10 16:31:43,618 [ERROR] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 16:31:43,619 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Використовуємо статичне зображення замість відео
+2025-04-10 16:31:43,621 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Отримано URL відео від D-ID за 0.86 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 16:31:43,623 [INFO] [c4a94537-ad5f-4c2d-9d9f-2c707071b52d] Запит оброблено успішно за 74.72 сек
+2025-04-10 16:37:20,861 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 16:37:40,088 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Новий запит чату. IP: 127.0.0.1
+2025-04-10 16:37:40,090 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Повідомлення користувача: 'привіт порадь мені сонячні панелі...' (скорочено)
+2025-04-10 16:37:40,094 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Запит до OpenAI Assistant API
+2025-04-10 16:37:40,614 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 16:37:40,989 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/messages "HTTP/1.1 200 OK"
+2025-04-10 16:37:41,849 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/runs "HTTP/1.1 200 OK"
+2025-04-10 16:37:42,200 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/runs/run_Aye7KliNBrNpc4g6yoEIFpOI "HTTP/1.1 200 OK"
+2025-04-10 16:37:43,555 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/runs/run_Aye7KliNBrNpc4g6yoEIFpOI "HTTP/1.1 200 OK"
+2025-04-10 16:37:44,909 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/runs/run_Aye7KliNBrNpc4g6yoEIFpOI "HTTP/1.1 200 OK"
+2025-04-10 16:37:46,487 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/runs/run_Aye7KliNBrNpc4g6yoEIFpOI "HTTP/1.1 200 OK"
+2025-04-10 16:37:48,092 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/runs/run_Aye7KliNBrNpc4g6yoEIFpOI "HTTP/1.1 200 OK"
+2025-04-10 16:37:48,348 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_W6OJG8f3VJGolrSyj2Ey8Raq/messages "HTTP/1.1 200 OK"
+2025-04-10 16:37:48,355 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Отримано відповідь від OpenAI за 8.26 сек
+2025-04-10 16:37:48,355 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 16:37:48,363 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Знайдено ключові слова для пошуку: монокристалічні панелі, полікристалічні панелі, тонкоплівкові панелі
+2025-04-10 16:37:48,365 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D0%BF%D0%BB%D1%96%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 16:37:48,555 [WARNING] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Не вдалося знайти інформацію в Google
+2025-04-10 16:37:48,557 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Запит до D-ID API для створення відео
+2025-04-10 16:37:48,558 [WARNING] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Текст для D-ID API занадто довгий (1134 символів), обмежуємо до 1000
+2025-04-10 16:37:49,420 [ERROR] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 16:37:49,422 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Використовуємо статичне зображення замість відео
+2025-04-10 16:37:49,424 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Отримано URL відео від D-ID за 0.87 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 16:37:49,426 [INFO] [14ac543c-0cc6-49aa-b619-22f7e6f304d2] Запит оброблено успішно за 9.34 сек
+2025-04-10 16:38:01,013 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Новий запит чату. IP: 127.0.0.1
+2025-04-10 16:38:01,014 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Повідомлення користувача: 'які з них найкращі?...' (скорочено)
+2025-04-10 16:38:01,016 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Запит до OpenAI Assistant API
+2025-04-10 16:38:05,868 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 502 Bad Gateway"
+2025-04-10 16:38:05,882 [INFO] Retrying request to /threads in 0.481713 seconds
+2025-04-10 16:38:06,707 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 16:38:07,088 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/messages "HTTP/1.1 200 OK"
+2025-04-10 16:38:07,878 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs "HTTP/1.1 200 OK"
+2025-04-10 16:38:08,229 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs/run_wYcNVT5MF166HXdn6EXoLQjx "HTTP/1.1 200 OK"
+2025-04-10 16:38:09,748 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs/run_wYcNVT5MF166HXdn6EXoLQjx "HTTP/1.1 200 OK"
+2025-04-10 16:38:11,099 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs/run_wYcNVT5MF166HXdn6EXoLQjx "HTTP/1.1 200 OK"
+2025-04-10 16:38:12,655 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs/run_wYcNVT5MF166HXdn6EXoLQjx "HTTP/1.1 200 OK"
+2025-04-10 16:38:14,174 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs/run_wYcNVT5MF166HXdn6EXoLQjx "HTTP/1.1 200 OK"
+2025-04-10 16:38:15,568 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/runs/run_wYcNVT5MF166HXdn6EXoLQjx "HTTP/1.1 200 OK"
+2025-04-10 16:38:15,804 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_4sDdZIUgbOXe2IKUq4iL09AK/messages "HTTP/1.1 200 OK"
+2025-04-10 16:38:15,809 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Отримано відповідь від OpenAI за 14.79 сек
+2025-04-10 16:38:15,811 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 16:38:15,818 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Знайдено ключові слова для пошуку: монокристалічні панелі, полікристалічні панелі, тонкоплівкові панелі
+2025-04-10 16:38:15,820 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D0%BF%D0%BB%D1%96%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 16:38:15,966 [WARNING] [a33111e0-db34-4dbd-ae2a-395debfe5493] Не вдалося знайти інформацію в Google
+2025-04-10 16:38:15,967 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Запит до D-ID API для створення відео
+2025-04-10 16:38:15,968 [WARNING] [a33111e0-db34-4dbd-ae2a-395debfe5493] Текст для D-ID API занадто довгий (1465 символів), обмежуємо до 1000
+2025-04-10 16:38:16,762 [ERROR] [a33111e0-db34-4dbd-ae2a-395debfe5493] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 16:38:16,764 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Використовуємо статичне зображення замість відео
+2025-04-10 16:38:16,766 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Отримано URL відео від D-ID за 0.80 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 16:38:16,767 [INFO] [a33111e0-db34-4dbd-ae2a-395debfe5493] Запит оброблено успішно за 15.75 сек
+2025-04-10 16:40:39,641 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 16:40:50,798 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Новий запит чату. IP: 127.0.0.1
+2025-04-10 16:40:50,799 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Повідомлення користувача: 'привіт порадь мені сонячні панелі...' (скорочено)
+2025-04-10 16:40:50,800 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Запит до OpenAI Assistant API
+2025-04-10 16:40:51,188 [INFO] HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-04-10 16:40:51,742 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/messages "HTTP/1.1 200 OK"
+2025-04-10 16:40:52,863 [INFO] HTTP Request: POST https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs "HTTP/1.1 200 OK"
+2025-04-10 16:40:53,238 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:40:54,664 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:40:56,008 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:40:57,379 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:40:58,738 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:00,174 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:01,745 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:03,102 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:04,492 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:05,853 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:07,221 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:08,792 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:10,246 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:11,613 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:12,938 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:14,312 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:15,770 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:17,211 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:18,701 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:20,095 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:21,512 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:22,841 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:24,251 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:25,895 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:28,239 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:29,586 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:30,973 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:32,332 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:33,667 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:34,999 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:36,428 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:37,794 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:39,137 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:40,532 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:41,920 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:43,317 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:44,686 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:46,061 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:47,404 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:48,770 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:50,205 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:51,563 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:52,942 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:54,364 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:55,744 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:57,123 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:58,520 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:41:59,835 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:01,378 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:02,753 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:04,387 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:06,792 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:08,136 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:09,492 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:10,901 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:12,246 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:13,619 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:14,966 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:16,308 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/runs/run_Ayco0IGy7TSV3Kzo8XEROUTu "HTTP/1.1 200 OK"
+2025-04-10 16:42:16,790 [INFO] HTTP Request: GET https://api.openai.com/v1/threads/thread_bbSaLFzC9vnsFLdzIqmupNth/messages "HTTP/1.1 200 OK"
+2025-04-10 16:42:16,796 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Отримано відповідь від OpenAI за 85.99 сек
+2025-04-10 16:42:16,797 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Аналіз відповіді для пошуку інформації про сонячні панелі
+2025-04-10 16:42:16,805 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Знайдено ключові слова для пошуку: монокристалічні панелі, полікристалічні панелі, тонкоплівкові панелі
+2025-04-10 16:42:16,806 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Пошук в Google: https://www.google.com/search?q=%D0%BC%D0%BE%D0%BD%D0%BE%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D0%BF%D0%BE%D0%BB%D1%96%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%96%D1%87%D0%BD%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D0%BF%D0%BB%D1%96%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%96%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D1%96%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D1%86%D1%96%D0%BD%D0%B0
+2025-04-10 16:42:17,018 [WARNING] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Не вдалося знайти інформацію в Google
+2025-04-10 16:42:17,020 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Запит до D-ID API для створення відео
+2025-04-10 16:42:17,020 [WARNING] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Текст для D-ID API занадто довгий (1719 символів), обмежуємо до 1000
+2025-04-10 16:42:17,866 [ERROR] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Помилка D-ID API: 500, відповідь: {"kind":"UnknownError","description":"Internal Server Error"}...
+2025-04-10 16:42:17,867 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Використовуємо статичне зображення замість відео
+2025-04-10 16:42:17,869 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Отримано URL відео від D-ID за 0.85 сек: https://create-images-results.d-id.com/DefaultPres...
+2025-04-10 16:42:17,871 [INFO] [92258462-0e7f-4ed7-b552-17fc8cd84d03] Запит оброблено успішно за 87.07 сек
+2025-04-10 16:57:29,513 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 16:59:53,538 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 17:01:15,655 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 17:04:12,991 [INFO] C:\Users\user\Desktop\SollarAgent\core\views.py changed, reloading.
+2025-04-10 17:27:18,334 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-10 17:27:19,291 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-16 14:34:40,191 [INFO] Запит головної сторінки. IP: 127.0.0.1
+2025-04-16 14:40:26,677 [INFO] Запит головної сторінки. IP: 127.0.0.1
