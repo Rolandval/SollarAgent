@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 import openai
+openai.api_key = settings.OPENAI_API_KEY
 import requests
 import json
 import time
@@ -26,9 +27,6 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
-
-# Встановлюємо API ключ OpenAI з налаштувань
-openai.api_key = settings.OPENAI_API_KEY
 
 # ID асистента OpenAI
 assistant_id = settings.OPENAI_ASSISTANT_ID  # Отримуємо ID асистента з налаштувань
@@ -197,17 +195,19 @@ def get_openai_response(user_message, request_id):
     """Отримання відповіді від OpenAI Assistant API"""
     try:
         # Створюємо новий потік для розмови
-        logger.debug(f"[{request_id}] Створення нового потоку для розмови")
+        logger.debug(f"[{request_id}] Створення нового потоку OpenAI")
         thread = openai.beta.threads.create()
-        logger.debug(f"[{request_id}] Створено потік з ID: {thread.id}")
         
-        # Додаємо повідомлення користувача до потоку
+        # Додаємо повідомлення користувача
         logger.debug(f"[{request_id}] Додавання повідомлення користувача до потоку")
         openai.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
             content=user_message
         )
+        
+        # Отримуємо ID асистента з налаштувань
+        assistant_id = settings.OPENAI_ASSISTANT_ID
         
         # Запускаємо асистента з інструкціями щодо сонячних панелей
         logger.debug(f"[{request_id}] Запуск асистента з ID: {assistant_id}")
@@ -249,25 +249,49 @@ def get_openai_response(user_message, request_id):
             if current_status == "completed":
                 logger.debug(f"[{request_id}] Виконання завершено за {elapsed_time:.2f} сек після {poll_count} перевірок")
                 break
+            
             elif current_status in ["failed", "cancelled", "expired"]:
-                logger.error(f"[{request_id}] Виконання завершилося з помилкою: {current_status}")
-                raise Exception(f"OpenAI Assistant виконання завершилося зі статусом: {current_status}")
-                
+                logger.error(f"[{request_id}] Помилка виконання: {current_status}")
+                return None
+            
+            # Затримка перед наступною перевіркою
             time.sleep(1)
+            
+            # Обмеження кількості спроб
+            if poll_count > 30:
+                logger.error(f"[{request_id}] Перевищено ліміт очікування (30 секунд)")
+                return None
         
-        # Отримуємо відповідь
-        logger.debug(f"[{request_id}] Отримання повідомлень з потоку")
-        messages = openai.beta.threads.messages.list(thread_id=thread.id)
+        # Отримуємо останнє повідомлення від асистента
+        logger.debug(f"[{request_id}] Отримання останнього повідомлення від асистента")
+        messages = openai.beta.threads.messages.list(
+            thread_id=thread.id
+        )
         
-        # Повертаємо текст відповіді
-        response_text = messages.data[0].content[0].text.value
-        logger.debug(f"[{request_id}] Отримано відповідь: '{response_text[:50]}...' (скорочено)")
+        # Перевіряємо, чи є повідомлення
+        if not messages.data:
+            logger.error(f"[{request_id}] Не отримано повідомлень від асистента")
+            return None
+        
+        # Отримуємо останнє повідомлення від асистента
+        assistant_message = messages.data[0]
+        
+        # Перевіряємо, чи це повідомлення від асистента
+        if assistant_message.role != "assistant":
+            logger.error(f"[{request_id}] Останнє повідомлення не від асистента: {assistant_message.role}")
+            return None
+        
+        # Отримуємо текст відповіді
+        response_text = assistant_message.content[0].text.value
+        
+        logger.debug(f"[{request_id}] Отримано відповідь від асистента: {response_text[:50]}...")
+        
         return response_text
-    
+        
     except Exception as e:
-        logger.error(f"[{request_id}] Помилка при отриманні відповіді від асистента: {str(e)}")
-        logger.error(f"[{request_id}] Трасування: {traceback.format_exc()}")
-        return "Вибачте, не вдалося отримати відповідь від асистента. Спробуйте ще раз."
+        logger.error(f"[{request_id}] Помилка при отриманні відповіді від OpenAI: {str(e)}")
+        logger.error(traceback.format_exc())
+        return None
 
 def generate_talking_avatar(text, request_id):
     """

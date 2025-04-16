@@ -41,6 +41,22 @@
     </div>
     
     <script>
+        // Функція для отримання CSRF-токена з кукі
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        
         // Глобальні змінні для розпізнавання мови
         let recognition;
         let isRecording = false;
@@ -139,13 +155,20 @@
                 },
                 body: JSON.stringify({ message: message })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 // Видаляємо індикатор завантаження
                 const loadingMessage = document.getElementById('loading-message');
                 if (loadingMessage) {
                     loadingMessage.remove();
                 }
+                
+                console.log('Отримано відповідь:', data);
                 
                 // Додаємо відповідь агента до чату
                 chatLog.innerHTML += `
@@ -274,6 +297,7 @@
         // Обробник натискання Enter для надсилання повідомлення
         document.getElementById('text-input').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
+                e.preventDefault();
                 sendMessage();
             }
         });

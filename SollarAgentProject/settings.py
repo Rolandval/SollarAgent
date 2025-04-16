@@ -130,7 +130,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-OPENAI_ASSISTANT_ID = os.getenv('OPENAI_ASSISTANT_ID')
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-DID_API_KEY = os.getenv('DID_API_KEY')
-DID_URL = os.getenv('DID_URL')
+# API Keys and Settings
+OPENAI_ASSISTANT_ID = os.getenv('OPENAI_ASSISTANT_ID', 'asst_123456789')  # Замініть на ваш реальний ID
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', 'sk-your-api-key')  # Замініть на ваш реальний ключ
+DID_API_KEY = os.getenv('DID_API_KEY', 'your-did-api-key')  # Замініть на ваш реальний ключ
+DID_URL = os.getenv('DID_URL', 'https://api.d-id.com/talks')
